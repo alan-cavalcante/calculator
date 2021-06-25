@@ -57,6 +57,10 @@ main {
     color: var(--verdePastel);
     display: flex;
     align-items: center;
+    overflow: hidden;
+}
+
+#displayCalc p {
 }
 
 #panel {

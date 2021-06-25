@@ -18,30 +18,31 @@
     <div id="container">
         <main>
             <div id="displayCalc">
-                <p id="numerosDisplay">Valor</p>
+                <p id="numerosDisplay"></p>
             </div>
             <div id="panel">
                 <ul id="operacoes">
-                    <a href="#" class="oper hover"><li>AC</li></a>
-                    <a href="#" class="oper hover"><li>C</li></a>
-                    <a href="#" class="oper hover"><li>,</li></a>
-                    <a href="#" class="oper hover"><li>.</li></a>
-                    <a href="#" class="oper hover"><li>/</li></a>
-                    <a href="#" class="oper hover"><li>*</li></a>
-                    <a href="#" class="oper hover"><li>-</li></a>
-                    <a href="#" class="oper hover"><li>+</li></a>
+                    <button type="button" onclick="AllClear()" class="oper hover" id="AllClear">AC</button>
+                    <button type="button" onclick="Clear()" class="oper hover" id="Clear">C</button>
+                    <button type="button" onclick="getComma()" class="oper hover" id=",">,</button>
+                    <button type="button" onclick="getDot()" class="oper hover" id=".">.</button>
+                    <button type="button" onclick="getDivision('/')" class="oper hover" id="divisao">/</button>
+                    <button type="button" onclick="getMultiply('*')" class="oper hover" id="multiplicacao">*</button>
+                    <button type="button" onclick="getSubtraction('-')" class="oper hover" id="subtracao">-</button>
+                    <button type="button" onclick="getAdd('+')" class="oper hover" id="adicao">+</button>
                 </ul>
                 <ul id="numerosBG">
-                    <a href="#" class="oper hover"><li>1</li></a>
-                    <a href="#" class="oper hover"><li>2</li></a>
-                    <a href="#" class="oper hover"><li>3</li></a>
-                    <a href="#" class="oper hover"><li>4</li></a>
-                    <a href="#" class="oper hover"><li>5</li></a>
-                    <a href="#" class="oper hover"><li>6</li></a>
-                    <a href="#" class="oper hover"><li>7</li></a>
-                    <a href="#" class="oper hover"><li>8</li></a>
-                    <a href="#" class="oper hover"><li>9</li></a>
-                    <a href="#" class="oper hover"><li>0</li></a>
+                    <button type="button" onclick="getNumber(this.id)" class="oper hover pad" id="1">1</button>
+                    <button type="button" onclick="getNumber(this.id)" class="oper hover pad" id="2">2</button>
+                    <button type="button" onclick="getNumber(this.id)" class="oper hover pad" id="3">3</button>
+                    <button type="button" onclick="getNumber(this.id)" class="oper hover pad" id="4">4</button>
+                    <button type="button" onclick="getNumber(this.id)" class="oper hover pad" id="5">5</button>
+                    <button type="button" onclick="getNumber(this.id)" class="oper hover pad" id="6">6</button>
+                    <button type="button" onclick="getNumber(this.id)" class="oper hover pad" id="7">7</button>
+                    <button type="button" onclick="getNumber(this.id)" class="oper hover pad" id="8">8</button>
+                    <button type="button" onclick="getNumber(this.id)" class="oper hover pad" id="9">9</button>
+                    <button type="button" onclick="getNumber(this.id)" class="oper hover pad" id="0">0</button>
+                    <button type="button" onclick="igual()" class="oper hover" id="=">=</button>
                 </ul>
             </div>
         </main>
