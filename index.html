@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <h1>Calculator</h1>
+        <h1>Simple Calculator</h1>
     </header>
 
     <div id="container">
@@ -24,12 +24,10 @@
                 <ul id="operacoes">
                     <button type="button" onclick="AllClear()" class="oper hover" id="AllClear">AC</button>
                     <button type="button" onclick="Clear()" class="oper hover" id="Clear">C</button>
-                    <button type="button" onclick="getComma()" class="oper hover" id=",">,</button>
-                    <button type="button" onclick="getDot()" class="oper hover" id=".">.</button>
-                    <button type="button" onclick="getDivision('/')" class="oper hover" id="divisao">/</button>
-                    <button type="button" onclick="getMultiply('*')" class="oper hover" id="multiplicacao">*</button>
-                    <button type="button" onclick="getSubtraction('-')" class="oper hover" id="subtracao">-</button>
-                    <button type="button" onclick="getAdd('+')" class="oper hover" id="adicao">+</button>
+                    <button type="button" onclick="getOperator('/')" class="oper hover" id="divisao">/</button>
+                    <button type="button" onclick="getOperator('*')" class="oper hover" id="multiplicacao">*</button>
+                    <button type="button" onclick="getOperator('-')" class="oper hover" id="subtracao">-</button>
+                    <button type="button" onclick="getOperator('+')" class="oper hover" id="adicao">+</button>
                 </ul>
                 <ul id="numerosBG">
                     <button type="button" onclick="getNumber(this.id)" class="oper hover pad" id="1">1</button>

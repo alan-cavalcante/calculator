@@ -60,8 +60,12 @@ main {
     overflow: hidden;
 }
 
-#displayCalc p {
-}
+/* #displayCalc p {
+    width: 100%;
+    max-width: 10ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
 
 #panel {
     display: flex;
